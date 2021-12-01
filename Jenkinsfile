@@ -12,6 +12,7 @@ node('master') {
 
      stage('Build') {
         bat 'mvn package'
+         archiveArtifacts artifacts: 'C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\maven1\\target\\my-app-1.0-SNAPSHOT.jar', followSymlinks: false
     }
 
     
